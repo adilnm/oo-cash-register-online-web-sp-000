@@ -1,6 +1,6 @@
 class CashRegister
   
-  attr_accessor :total, :discount
+  attr_accessor :total, :discount,:previous_total
   
   def initialize(discount=nil)
   @total=0
@@ -12,7 +12,7 @@ def add_item(title,price,quantity=nil)
   if(quantity)
   new_price=price*quantity
   self.total+=new_price
-  previous_total
+  @previous_total=self.total-new_price
   @all.fill(title, @all.size, quantity)
 else
   self.total+=price
@@ -34,6 +34,6 @@ end
   end
   
   def void_last_transaction
-    
+    self.previous_total
   end
 end
