@@ -8,8 +8,11 @@ class CashRegister
 end
 
 def add_item(title,price,quantity=nil)
+  if(quantity)
   new_price=price*quantity
   @total+=new_price
+else
+  @total+=price
 
   
 end
