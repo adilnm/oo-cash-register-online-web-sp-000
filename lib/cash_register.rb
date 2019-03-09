@@ -12,7 +12,7 @@ def add_item(title,price,quantity=nil)
   if(quantity)
   new_price=price*quantity
   self.total+=new_price
-  @allarray.fill(12, array.size, 4)
+  @all.fill(title, @all.size, quantity)
 else
   self.total+=price
   @all << title
