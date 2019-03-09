@@ -16,5 +16,7 @@ else
 end
 end
 
-  def 
+  def apply_discount
+    
+  end
 end
