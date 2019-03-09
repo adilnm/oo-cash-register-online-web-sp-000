@@ -14,6 +14,7 @@ def add_item(title,price,quantity=nil)
   @@all << title
 else
   self.total+=price
+  @@all << title
 end
 end
 
