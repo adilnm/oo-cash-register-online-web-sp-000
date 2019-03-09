@@ -12,7 +12,7 @@ def add_item(title,price,quantity=nil)
   if(quantity)
   new_price=price*quantity
   self.total+=new_price
-  @previous_total=self.total-new_price
+  self.previous_total=self.total-new_price
   @all.fill(title, @all.size, quantity)
 else
   self.total+=price
