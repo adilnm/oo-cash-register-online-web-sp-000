@@ -14,6 +14,7 @@ def add_item(title,price,quantity=nil)
 else
   @total+=price
 end
-  
 end
+
+  def 
 end
