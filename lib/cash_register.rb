@@ -9,8 +9,7 @@ end
 
 def add_item(title,price,quantity=nil)
   @total+=price*quantity
-  @total*=quantity
-  
+
   
 end
 end
