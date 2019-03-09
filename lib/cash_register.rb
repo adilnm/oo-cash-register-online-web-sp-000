@@ -4,6 +4,7 @@ class CashRegister
   
   def initialize(discount=nil)
   @total=0
+  @previous_total=0
   @discount=discount
   @all=[]
 end
