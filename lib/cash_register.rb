@@ -10,13 +10,14 @@ end
 def add_item(title,price,quantity=nil)
   if(quantity)
   new_price=price*quantity
-  @total+=new_price
+  self.total+=new_price
 else
-  @total+=price
+  self.total+=price
 end
 end
 
   def apply_discount
+    self.total-se
     
   end
 end
