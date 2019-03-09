@@ -34,6 +34,6 @@ end
   end
   
   def void_last_transaction
-    self.previous_total
+    self.total=self.previous_total
   end
 end
