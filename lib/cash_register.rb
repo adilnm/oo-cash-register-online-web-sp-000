@@ -13,7 +13,7 @@ def add_item(title,price,quantity=nil)
   @total+=new_price
 else
   @total+=price
-
+end
   
 end
 end
