@@ -7,5 +7,9 @@ class CashRegister
   @discount=20
 end
 
-def 
+def add_item(title,price)
+  @
+  
+  
+end
 end
