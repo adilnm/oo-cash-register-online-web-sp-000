@@ -6,4 +6,6 @@ class CashRegister
   @total=0
   @discount=20
 end
+
+def 
 end
